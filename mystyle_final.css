@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+
+}
+
+/* TO DISCUSS NEXT WEEK - included the Google Font, but can still see a difference */
+/* SOLVED */
+body, html {
+    height: 100%; 
+    width: 100%;
+}
+::selection {
+  /* Pseudo-class used to control the selected text's background */
+    background: #FFE799;
+}
+header{
+    padding: 6em 0;
+    background-image: url('http://i.imgur.com/lvXbgcg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: solid 1em #FFCF33;
+    text-align: center;
+}
+
+#content {
+    margin: 4em auto;
+    /* Change 1 */
+    /*max-width: 34em;*/
+    max-width: 53em;
+    
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(34, 34, 34);
+}
+footer{
+    background-color: rgb(89, 79, 73);
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:white;
+    padding: 4em;
+    text-align: center;
+}
+footer p{
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+header p{
+    margin-bottom: 0.2em;
+    color: #FFFFFF;
+    font-family: 'Gentium Book Basic', Georgia, serif;
+    font-size: 2em;
+}
+header h1{
+    margin-top: -0.2em;
+    color: #FFF1C2;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6em;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-shadow: 0px 3px 0px #FFCF33;
+}
+#content h1{
+    text-align: left;
+    font-size: 2em;
+    letter-spacing: 0.04em;
+}
+#content p{
+    letter-spacing: 0.05em;
+    font-weight: 300;
+ 
+}
+#content span{
+    font-weight: bold;
+}
+#content section{
+    padding-bottom: 1.5em;
+}
+h3{
+    font-family: 'Gentium Book Basic', Georgia, serif;
+    color: rgb(255, 207, 51);
+    font-weight: bold;
+}
+#projects ul
+{
+list-style: none;
+/*DOUBT - unwanted padding being added */
+padding: 0px;
+text-align: center;
+}
+#projects li{
+    display: inline-block;
+    width: 49%;
+    border:2px solid #182540;
+    margin-bottom: 5px;
+    /*DOUBT - ok to use fixed widths for margins/borders? Or require ems/pixels for these as well? */
+}
+#projects img{
+    width: 100%;
+}
+footer ul{
+    /* To remove the bullets */
+    list-style: none;
+    float:left;
+    position: relative;
+    left: 50%;
+    margin:  0;
+    padding: 0;
+
+}
+footer li{
+    /* POINT 2 - as specified in HTML file*/
+    margin-right: 1em;
+    float:left;
+    position: relative;
+    right:50%;
+    padding: 0;
+    /*display: inline;*/
+}
+a:link {
+font-weight: bold;
+text-decoration: none;
+color: #FFCF33;
+}
+a:visited {
+color: #D1A000;
+}
+a:hover {
+color: #ECD08A;
+}
+
+/*Positioning this correctly is important - it only applied once it was placed after the base 'header' styling*/
+/*DOUBT - only screen? */
+@media only screen and (max-width: 500px) {
+    .masthead-heading {
+        font-size: 3em;
+    }
+    header{
+        padding: 3em 0;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #projects li {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 880px) {
+    #content{
+        margin: 4em 1em;
+    }
+}

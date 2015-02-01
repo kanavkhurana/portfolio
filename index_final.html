@@ -1,0 +1,143 @@
+<!--Responsive design - learn about accessibility aria, alt, etc. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>About me - Kanav Khurana</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="mystyle_final.css">
+</head>
+
+<body>
+    <header>
+        <p>
+            Hi, I'm
+        </p>
+        <h1 class="masthead-heading">Kanav!</h1>
+    </header>
+    <div id="content">
+        <section id="introduction">
+            <h1>Introduction</h1>
+            <p>
+                I’m a Front End and iOS developer who loves
+                <span>good design, good coffee,</span> and <span>good people</span>. I work as a Front-End Development and iOS mentor for Thinkful, a web developer for <a href="http://ideabasekent.com/">IdeaBase</a  >, and a freelance iOS developer.
+            </p>
+            <p>
+                I love the web and all the awesome things that come out of it. I’m excited to live and work in a time of huge advances in web technology. It’s easier than ever to share and collaborate with others, all because of the Internet.
+            </p>
+            <p>
+                Education is also super important to me - I come from a family of educators - and I’m stoked to work with Thinkful’s awesome student community.
+            </p>
+        </section>
+        <section id ="whereimfrom">
+            <h1>Where I'm From</h1>
+            <p>
+                I’m from the Midwest - Ohio, specifically - Cleveland, even more specifically. I love the spacious fields, the smell of the outdoors, and the people in Ohio. I bring a bit of the Midwest work ethic to all my projects - a craftsman’s approach to <span>Doing Things Right the First Time</span>.
+            </p>
+            <!-- Can we put a <div> in a <p>??-->
+            <!-- POINT 1-->
+            <!-- EXPLANATION - there should be no need to put a block level element inside another block level element (P). You should only put inline level elements (span). However, there is a workaround, http://stackoverflow.com/questions/5441639/how-can-i-put-div-in-p, however I was unable to replicate
+            -->
+            <p>
+                I’m finishing my design degree at Kent State University, and will be graduating this winter with a focus in <span>interaction design</span>.
+            </p>
+        </section>
+       
+        <section id="moreaboutme">
+            <h1>More About Me</h1>
+            <h3>
+                What are your favorite hobbies?
+            </h3>
+            <p>
+                I’m a huge gamer. I also <span>LOVE</span> food. I’m always trying new cuisine. Foodies unite!
+            </p>
+            <h3>
+                What’s your dream job?
+            </h3>
+            <p>
+                I’d love to open my own mobile game studio in the future!
+            </p>
+            <h3>
+                What’s your background?
+            
+            </h3>
+            <p>
+                I’ve been programming since I was in middle school. I decided to go to school for design because I love front-end and felt like I needed more help with the design side than the programming side.
+            </p>
+            <h3>
+                What music have you been listening to lately?
+            </h3>
+            <p>
+                I’ve been listening to a ton of <a class="link" href="https://soundcloud.com/rynweaver/promises">Ryn Weaver</a> lately, ever since her first EP came out in late July.
+            </p>
+        </section>
+        <!--Can we load live previews? IFrame?-->
+        <section id="projects">
+            <h1>Projects</h1>
+            <ul>
+                <li>
+                    <a href="http://kanavkhurana.github.io/hot-or-cold-starter/"><img src="images/HotorCold.png"/></a>
+                </li>
+                <li>
+                    <a href="http://kanavkhurana.github.io/stackerAJAX/"><img src="images/StackerAjax.png"/></a>
+                </li>
+                <li>
+                    <a href="http://kanavkhurana.github.io/Quiz/"><img src="images/Quiz.png"/></a>
+                </li>
+                <li>
+                    <a href="http://kanavkhurana.github.io/fizzBuzz/"><img src="images/FizzBuzz.png"/></a>
+                </li>
+                <li>
+                    <a href="http://kanavkhurana.github.io/shoppinglist/"><img src="images/ShoppingList.png"/></a>
+                </li>
+                <li>
+                    <a href="http://kanavkhurana.github.io/karmaClone/"><img src="images/KarmaClone.png"/></a>
+                </li>
+                <li>
+                    <a href="http://kanavkhurana.github.io/streetfighter/"><img src="images/StreetFighter.png"/></a>
+                </li>
+                <li>
+                    <a href="http://kanavkhurana.github.io/thinktube/"><img src="images/Thinktube.png"/></a>
+                </li>
+                <li>
+                    <a href="http://kanavkhurana.github.io/apihack/"><img src="images/ApiHack.png"/></a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>
+            Say hi to me on these social networks:
+        </p>
+        <!-- Tried using div with floats instead of display - inline-block -->
+        <!--POINT 2 -->
+        <!-- EXPLANATION - Using float instead of display:inline/inline-block results in the links NOT being centrally aligned -->
+        <!-- ALMOST ACHIEVED SAME RESULT - saved here-
+            http://codepen.io/anon/pen/KwKGMZ
+            -->
+        <!-- TO DISCUSS NEXT WEEK - Why isn't this div covering the ul - Inspect element? -->
+        <ul>
+            <li>
+                <a href="http://github.com/brebory">Github</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/brebory">Twitter</a>
+            </li>
+            <li>
+                <a href="https://plus.google.com/+BrendonRobertoThinkful">Google+</a>
+            </li>
+        </ul>
+        <!-- Understand float clearing. Did it the right way? -->
+        <!-- POINT 3-->
+        <div style="clear:both;"></div>
+        <p>
+            Cover Image via <a href="https://unsplash.com">Unsplash</a>
+        </p>
+    </footer>
+</body>
+
+</html>

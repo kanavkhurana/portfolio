@@ -1,3 +1,5 @@
+/*Include CSS Reset */
+
 body {
     margin: 0;
 
@@ -92,7 +94,8 @@ text-align: center;
     width: 49%;
     border:2px solid #182540;
     margin-bottom: 5px;
-    /*DOUBT - ok to use fixed widths for margins/borders? Or require ems/pixels for these as well? */
+    /*DOUBT - ok to use fixed widths for margins/borders? Or require ems/percentages for these as well? */
+    /*Convert all px to em - Maintain a standard*/
 }
 #projects img{
     width: 100%;
